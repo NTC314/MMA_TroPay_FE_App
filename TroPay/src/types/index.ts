@@ -1,7 +1,6 @@
 // Navigation types
 export interface RootStackParamList {
   Home: undefined;
-  Explore: undefined;
   Profile: undefined;
   Settings: undefined;
   Login: undefined;
@@ -12,10 +11,13 @@ export interface RootStackParamList {
 
 export interface TabParamList {
   HomeTab: undefined;
-  ExploreTab: undefined;
   ProfileTab: undefined;
   SettingsTab: undefined;
 }
+
+// Export tenant types
+export * from './roomContract';
+export * from './tenant';
 
 // User types
 export interface User {
